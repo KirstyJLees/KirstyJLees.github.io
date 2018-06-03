@@ -1,4 +1,15 @@
 ---
 title: "Publications"
-output: html_document
 ---
+For an up to date list see my [google scholar](https://scholar.google.co.uk/citations?user=CJeBxfUAAAAJ&hl=en) page.
+
+###In press
+
+**K.J. Lees**, A.c. Mil, D.J. Skerritt, P.A. Robertson, C. Fitzsimmons. *Movement patterns of a commercially important, free-ranging marine invertebrate in the vicinity of a bait source.* Animal Biotelemetry
+
+###2016
+
+**K.J. Lees**, A.J McKenzie, J.P Newell Price, C.N. Critchley, C.M. Rhymer, B.J. Chambers, M.J. Whittingham. *The effects of soil compaction mitigation on below-ground fauna: How earthworms respond to mechanical loosening and power harrow cultivation.*
+Agriculture, Ecosystems & Environment 232, 273-282
+
+**K.J. Lees**, A.J. Guerin, E.A. Masden. *Using kernel density estimation to explore habitat use by seabirds at a marine renewable wave energy test facility.* Marine Policy 63, 35-44

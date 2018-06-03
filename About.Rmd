@@ -1,15 +1,16 @@
 ---
-title: "About me"
+title: "About me..."
 ---
+<br>
+<img src= "images/KIRSTY.jpg" style="width:30%; border:5px solid; margin-right: 20px" align= "left"> 
+I am a movement ecologist nearing the end of my PhD on European lobster. I enjoy working with complex datasets to solve applied problems. I have a broad interest in the ecological effects of anthropogenic disturbance, and have worked on a number of different taxa and ecosystems. 
 
-## Kirsty J. Lees
-
-<img src= "images/KIRSTY.jpg" style="width:30%; border:5px solid; margin-right: 20px" align= "left"> <br><br>
-I am a movement ecologist nearing the end of my PhD on European lobster. The aim of my research was to better understand movement of free-ranging lobsters in order to improve estimates of relative abundance, and improve the sustainability of European lobster stocks. 
-
-I have been using fine-scale acoustic telemetry data to quantify individual behaviour of lobster in the presence and absence of traps, quantify the spatial overlap and dynamic interactions between lobsters, and investigate the environmental drivers of lobster movement.
+The aim of my PhD research was to better understand movement of free-ranging lobsters in order to improve estimates of relative abundance, and improve the sustainability of European lobster stocks. I have been using fine-scale acoustic telemetry data to quantify individual behaviour of lobster in the presence and absence of traps, quantify the spatial overlap and dynamic interactions between lobsters, and investigate the environmental drivers of lobster movement.
 
 **Contact**: k.lees1 at ncl.ac.uk, @[Scottish_bird](http://twitter.com/Scottish_Bird)
 
+<br><br>
+
 <img src= "images/LOBSTER.jpg" style="width:100%; border:5px solid; margin-right: 20px" align= "bottom"> 
 
+<a class="twitter-timeline" href="https://twitter.com/Scottish_Bird">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
