@@ -1,0 +1,76 @@
+---
+title: "CV"
+output: html_document
+---
+
+##KEY RESEARCH SKILLS
+Extensive experience in analysing patterns of movement and behaviour from telemetry data
+
+Experience in use of R statistical programming environment for biostatistical and behavioural modelling
+
+Analysing habitat and movement data in different environments
+
+Use of GIS and integration with formal statistical analysis
+
+LaTex
+
+
+##PREVIOUS RESEARCH EXPERIENCE
+
+###Research Assistant - 2011-2014
+Environmental Research Institute- University of Highlands & Islands, Thurso.	
+Assisting on a variety of collaborative multidisciplinary EU projects that investigated the potential ecological effects of marine renewable energy. 
+
+####Energymare
+Monitoring the rate of bioaccumulation and the potential for fish aggregation around a wave energy converter using underwater cameras.
+
+####Hebridean Marine Energy Futures.
+Investigating the potential ecological impact of wave renewable energy devices on seabird distributions.  Spatial analysis and statistical modelling of seabird distributions using a long-term dataset of land-based seabird observations before and after deployment of a wave energy device. Responsible for the completion of the work package and the associated final report.
+
+####MaREE
+Investigating the overlap of seabird dive profiles and habitat use with marine renewable sites. Deploying GPS and TDR tags on European shags and black guillemots.
+
+###Food and Environment Research Agency - 2010-2011		
+Field and laboratory support for projects within the Wildlife Management team. Assisting with the trapping of small to large mammals, and deployment of RADAR to monitor bird movement through offshore energy developments. 
+
+###Senior Research Assistant - Royal Society for Protection of Birds - 2009 
+Completing extensive surveys of upland breeding birds and nest trapping golden plover, and fitting VHF tags to both adults and chicks.	
+
+<br>
+
+##ADDITIONAL RELEVANT EXPERIENCE
+
+####British Trust for Ornithology - C permit holder since 2009 - ongoing 
+Previous endorsements for VHF and GPS shore bird and seabird tagging studies.
+
+<br>
+
+##PUBLICATIONS
+
+See my [google scholar](https://scholar.google.co.uk/citations?user=CJeBxfUAAAAJ&hl=en) page for an up to date list.
+
+<br>
+
+##TEACHING EXPERIENCE
+
+###Dissertation supervision
+Habitat use of GPS collared vervet monkeys on St Kitts.
+
+###Residential field courses 
+Undergraduate residential field courses.
+Supervision of small groups during week long independent field projects. 
+
+###Undergraduate field courses
+Bird Identification
+Small Mammal Ecology 
+
+###Lab and computer-based modules
+Statistics using R (MSc)
+Ecological modelling (BSc)
+Introduction to GIS (BSc).
+
+
+						 
+
+
+
