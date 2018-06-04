@@ -1,4 +1,5 @@
 name: "my-website"
+output_dir: "."
 navbar:
   title: "Kirsty J Lees"
   left:
