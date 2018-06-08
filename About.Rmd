@@ -11,6 +11,6 @@ The aim of my PhD research was to better understand movement of free-ranging lob
 
 <br><br>
 
-<img src= "images/LOBSTER.jpg" style="width:100%; border:5px solid; margin-right: 20px" align= "bottom"> 
+<img src= "images/LOBSTER.jpg" style="width:65%; border:5px solid; margin-right: 20px" align= "right"> 
 
-<a class="twitter-timeline" href="https://twitter.com/Scottish_Bird">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a class="twitter-timeline" href="https://twitter.com/Scottish_Bird" data-width="280" data-height="400">Tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
