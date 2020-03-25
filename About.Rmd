@@ -5,7 +5,7 @@ title: "About me..."
 <img src= "images/KIRSTY.jpg" style="width:30%; border:5px solid; margin-right: 20px" align= "left"> 
 I am a quantitative ecologist that enjoys working with complex datasets to solve applied problems. My research is focussed on answering ecological questions that are relevant to stakeholders, by addressing knowledge gaps that are necessary to improve management decision making. Many of my previous projects have been highly collaborative, involving stakeholders, regulators and industry. 
 
-My current postdoc position uses mark-recapture modeling to estimate Greenland halibut survival using deep-sea acoustic telemetry data and fish tags returned by Inuit fishers. These estimates will be used to support the development of an inshore Inuit community fishery within Cumberland Sound, Baffin Island. 
+My current postdoc position at the University of Windsor uses mark-recapture modeling to estimate Greenland halibut survival using deep-sea acoustic telemetry data and fish tags returned by Inuit fishers. These estimates will be used to support the development of an inshore Inuit community fishery within Cumberland Sound, Baffin Island. 
 
 The aim of my PhD research was to better understand movement of free-ranging lobsters in order to improve estimates of relative abundance, and improve the sustainability of European lobster stocks. I have been using fine-scale acoustic telemetry data to quantify individual behaviour of lobster in the presence and absence of traps, quantify the spatial overlap and dynamic interactions between lobsters, and investigate the environmental drivers of lobster movement.
 
