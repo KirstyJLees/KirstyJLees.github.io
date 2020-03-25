@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -69,9 +70,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -85,13 +84,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -107,7 +111,6 @@ body {
   padding-top: 57px;
   margin-top: -57px;
 }
-
 .section h2 {
   padding-top: 57px;
   margin-top: -57px;
@@ -127,6 +130,43 @@ body {
 .section h6 {
   padding-top: 57px;
   margin-top: -57px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -148,19 +188,73 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -210,85 +304,48 @@ $(document).ready(function () {
 
 
 <div id="key-research-skills" class="section level2">
-<u><h2>Key Research Skills</h2></u>
-<p>Experience of building and implementing Bayesian mark-recapture models in RStan</p>
-<p>Extensive experience in analysing patterns of movement and behaviour from both terrestrial and aquatic telemetry data</p>
-<p>Experience in use of R statistical programming environment for biostatistical and behavioural modelling</p>
-<p>Analysing habitat and movement data in different environments</p>
-<p>Use of GIS and integration with formal statistical analysis</p>
-<p>LaTex</p>
-<div id="education" class="section level2" >
-<u><h2>Education</h2></u>
-<p>PhD School of Natural and Environmental Sciences Newcastle University, 2015 - 2018<br>
-"Movement patterns of the European lobster <i>Homarus gammarus</i>: investigating the effects of habitat use and behaviour patterns on catchability."</p>
-<div id="previous-research-experience" class="section level2">
-<u><h2>Previous Research Experience</h2></u>
-<div id="research-assistant---2011-2014" class="section level3">
-<h3>University of Highlands &amp; Islands - 2011-2014</h3>
-<h4>Research Assistant, Environmental Research Institute, Thurso.</h4>
-<p>Assisting on a variety of collaborative multidisciplinary EU projects that investigated the potential ecological effects of marine renewable energy.</p>
-<div id="energymare" class="section level4">
-<h4>Energymare</h4>
-<p>Monitoring the rate of bioaccumulation and the potential for fish aggregation around a wave energy converter using underwater cameras.</p>
-</div>
-<div id="hebridean-marine-energy-futures." class="section level4">
-<h4>Hebridean Marine Energy Futures.</h4>
-<p>Investigating the potential ecological impact of wave renewable energy devices on seabird distributions. Spatial analysis and statistical modelling of seabird distributions using a long-term dataset of land-based seabird observations before and after deployment of a wave energy device. Responsible for the completion of the work package and the associated final report.</p>
-</div>
-<div id="maree" class="section level4">
-<h4>MaREE</h4>
-<p>Investigating the overlap of seabird dive profiles and habitat use with marine renewable sites. Deploying GPS and TDR tags on European shags and black guillemots.</p>
-</div>
-</div>
-<div id="food-and-environment-research-agency---2010-2011" class="section level3">
-<h3>Food and Environment Research Agency - 2010-2011</h3>
-<h4>Field Ecologist</h4>
-<p>Field and laboratory support for projects within the Wildlife Management team. Assisting with the trapping of small to large mammals, and deployment of RADAR to monitor bird movement through offshore energy developments.</p>
-</div>
-<div id="senior-research-assistant---royal-society-for-protection-of-birds---2009" class="section level3">
-<h3>Royal Society for Protection of Birds - 2009</h3>
-<h4>Senior Research Assistant</h4>
-<p>Completing extensive surveys of upland breeding birds and nest trapping golden plover, and fitting VHF tags to both adults and chicks.</p>
+<h2>Key Research Skills</h2>
+<ul>
+<li>R statistical programming environment for biostatistical and behavioural modelling</li>
+<li>Building and implementing Bayesian mark-recapture models in RStan</li>
+<li>Analysing patterns of movement and behaviour from telemetry data in different environments</li>
+<li>Use of GIS software and integration with formal statistical analysis</li>
+</ul>
 <p><br></p>
 </div>
-<div id="additional-relevant-experience" class="section level2">
-<u><h2>Additional relevant experience</h2></u>
-<div id="british-trust-for-ornithology---c-permit-holder-since-2009---ongoing" class="section level4">
-<h4>British Trust for Ornithology - C permit holder since 2009 - ongoing</h4>
-<p>Previous endorsements for VHF and GPS shore bird and seabird tagging studies.</p>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<ul>
+<li>2015-2018 <u>Newcastle University - PhD School of Natural and Environmental Sciences.</u><br> “Movement patterns of the European lobster Homarus gammarus: investigating the effects of habitat use and behaviour patterns on catchability.”</li>
+<li>2005-2006 <u>University of Edinburgh - MSc Forest Ecology and Management.</u><br> “Scarlet macaw food choice in relation to fruiting phenology and availability.”</li>
+<li>2000-2004 <u>University of Glasgow - BSc (Hons) Zoology, 2:2.</u><br></li>
+</ul>
 <p><br></p>
 </div>
-<div id="publications" class="section level2">
-<u><h2>Publications</h2></u>
-<p>See my <a href="https://scholar.google.co.uk/citations?user=CJeBxfUAAAAJ&amp;hl=en">google scholar</a> page for an up to date list.</p>
-<div id="peer-review" class="section level2">
-<u><h2>Peer-review</h2></u>
-<p>See my <a href="https://publons.com/researcher/3076938/kirsty-lees/peer-review/">publons</a> profile for a list of journal I have reviewed for.</p>
+<div id="employment-history" class="section level2">
+<h2>Employment History</h2>
+<ul>
+<li>2019 – <u>Postdoctoral Fellow, Integrative Biology, University of Windsor, ON.</u><br> Developing acoustic telemetry Bayesian mark-recapture models using RStan to estimate survival of Greenland halibut and support the development of an Inuit community fishery. Assisting with the supervision of student projects, and contributing to Arctic-based telemetry field work.<br></li>
+<li>2011-2014 <u>Research Assistant, University of Highlands &amp; Islands, U.K.</u><br> Assisting on a variety of collaborative multidisciplinary EU projects that investigated the potential ecological effects of marine renewable energy.<br> –Energymare - Monitoring the potential for fish aggregation around wave energy converters using underwater cameras.<br> –Hebridean Marine Energy Futures - Investigating the potential ecological impact of wave renewable energy devices on seabird distributions. Spatial analysis and statistical modelling of seabird distributions using a long-term dataset of land-based seabird observations, before and after deployment of a wave energy device.<br> –MaREE - Investigating the overlap of seabird dive profiles and habitat use with marine renewable sites. Deploying GPS and TDR tags on seabirds.<br></li>
+<li>2010-2011 <u>Field Ecologist, Food and Environment Research Agency, UK.</u><br> Field and laboratory support for projects within the Wildlife Management team. Assisting with the trapping of small to large mammals, and deployment of RADAR to monitor bird movement through offshore energy developments.<br></li>
+<li>2009 <u> Senior Research Assistant - Royal Society for the Protection of Birds, UK</u><br> Completing extensive surveys of upland breeding birds, and nest trapping shore birds to attach VHF tags to both adults and chicks.<br></li>
+</ul>
 <p><br></p>
-
 </div>
 <div id="teaching-experience" class="section level2">
-<u><h2>Teaching experience</h2></u>
-<div id="Lectures" class="section level3">
-<h3>Lectures</h3>
-<p>Final Year Undergraduate Community Ecology</p>
-<div id="dissertation-supervision" class="section level3">
-<h3>Undergraduate dissertation supervision</h3>
-<p>Habitat use of GPS collared vervet monkeys on St Kitts.</p>
+<h2>Teaching Experience</h2>
+<p><b>Lecturing</b> – Community Ecology (final year undergraduate), University of Windsor.<br> <b>Undergraduate Supervision</b><br> – Investigating differing detection efficiencies of VMT and VR2 acoustic receivers (University of Windsor, 2019). <br> – Habitat use and home-range analysis of GPS collared vervet monkeys Chlorocebus aethiops on St Kitts (Newcastle University, 2017 and 2018). <br> <b>Computer practicals</b> Statistics using R (MSc), Ecological modelling (BSc), and Introduction to GIS (BSc).<br> <b>Field Courses</b> Residential field courses: Supervision of small groups during independent projects.<br> – Ornithology: Field visits to practice bird identification and daily classroom revision sessions.<br> – Small Mammal Ecology: small mammal trapping, radio-tracking, and home range analyses. <br></p>
+<p><br></p>
 </div>
-<div id="residential-field-courses" class="section level3">
-<h3>Residential field courses</h3>
-<p>Undergraduate residential field courses. Supervision of small groups during week long independent field projects.</p>
-</div>
-<div id="undergraduate-field-courses" class="section level3">
-<h3>Undergraduate field courses</h3>
-<p>Bird identification<br>Small Mammal Ecology</p>
-</div>
-<div id="lab-and-computer-based-modules" class="section level3">
-<h3>Lab and computer-based modules</h3>
-<p>Statistics using R (MSc) <br>Ecological modelling (BSc) <br>Introduction to GIS (BSc).</p>
+<div id="additional-relevant-skills" class="section level2">
+<h2>Additional relevant skills</h2>
+<p><b>Peer-review</b> Marine Ecology Progress Series, Fisheries Management and Ecology.<br> <b>Software</b> Experienced LaTeX user.<br> <b>Fieldwork</b> Boat-based fieldwork - up to 2 weeks at sea. Acoustic receiver deployment and maintenance, acoustic tagging of lobsters and crabs, and fish dissections and sampling.<br> Bird ringing/banding permit holder - British Trust for Ornithology.<br> <b>Outreach</b> Science-based Stand-up Comedy, The Stand Comedy Club, Newcastle.<br> Two performances as part of Bright Club. Bright Club encourages academics to share their research experiences using the medium of comedy with adult audiences that are not usually targeted as part of traditional outreach activities.<br> <a href="https://www.youtube.com/watch?v=Nnou0FRtRpI" class="uri">https://www.youtube.com/watch?v=Nnou0FRtRpI</a> April 2016 - starts 6.40 min<br> <a href="https://www.youtube.com/watch?v=Enghu41ZEus" class="uri">https://www.youtube.com/watch?v=Enghu41ZEus</a> July 2015</p>
 </div>
 
+
+
+
+</div>
 
 <script>
 
@@ -302,6 +359,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
