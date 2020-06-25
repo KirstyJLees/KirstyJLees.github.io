@@ -21,6 +21,8 @@ output: html_document
 <br>
 
 ## Employment History
+- 2020 --	<u>Postdoctoral Researcher, IML, Department for Fisheries and Oceans Canada, QC.</u><br> 
+Studying the movement ecology and behaviour of benthic invertebrates using acoustic telemetry.<br>
 - 2019 --	<u>Postdoctoral Fellow, Integrative Biology, University of Windsor, ON.</u><br> 
 Developing acoustic telemetry Bayesian mark-recapture models using RStan to estimate survival of Greenland halibut and support the development of an Inuit community fishery. Assisting with the supervision of student projects, and contributing to Arctic-based telemetry field work.<br>
 - 2011-2014	<u>Research Assistant, University of Highlands & Islands, U.K.</u><br> 

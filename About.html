@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -23,6 +22,15 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -68,6 +76,7 @@ h6 {
   text-align: left;
 }
 </style>
+
 
 
 
@@ -232,6 +241,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -304,8 +314,9 @@ $(document).ready(function () {
 
 
 <p><br> <img src= "images/KIRSTY.JPG" style="width:30%; border:5px solid; margin-right: 20px" align= "left"> I am a quantitative ecologist that enjoys working with complex datasets to solve applied problems. My research is focussed on answering ecological questions that are relevant to stakeholders, by addressing knowledge gaps that are necessary to improve management decision making. Many of my previous projects have been highly collaborative, involving stakeholders, regulators and industry.</p>
-<p>My current postdoc position uses mark-recapture modeling to estimate Greenland halibut survival using deep-sea acoustic telemetry data and fish tags returned by Inuit fishers. These estimates will be used to support the development of an inshore Inuit community fishery within Cumberland Sound, Baffin Island.</p>
-<p>The aim of my PhD research was to better understand movement of free-ranging lobsters in order to improve estimates of relative abundance, and improve the sustainability of European lobster stocks. I have been using fine-scale acoustic telemetry data to quantify individual behaviour of lobster in the presence and absence of traps, quantify the spatial overlap and dynamic interactions between lobsters, and investigate the environmental drivers of lobster movement.</p>
+<p>My current postdoc position at the Department of Fisheries and Oceans is focussed on studying the movement ecology of important benthic invertebrate species; snow crab (Chionoecetes opilio), American lobster (Homarus americanus), rock crab (Cancer irroratus), common whelk (Buccinum undatum) green sea urchin (Strongylocentrotus droebachiensis), and sea cucumber (Cucumaria frondosa).</p>
+<p>My previous postdoc position at the University of Windsor used mark-recapture modeling to estimate Greenland halibut (Reinhardtius hippoglossoides) survival using deep-sea acoustic telemetry data and fish tags returned by Inuit fishers. These estimates will be used to support the development of an inshore Inuit community fishery within Cumberland Sound, Baffin Island.</p>
+<p>The aim of my PhD research was to better understand movement of free-ranging European lobsters (H. gammarus) in order to improve estimates of relative abundance, and improve the sustainability of European lobster stocks. I have been used fine-scale acoustic telemetry data to quantify individual behaviour of lobster in the presence and absence of traps, quantify the spatial overlap and dynamic interactions between lobsters, and investigate the environmental drivers of lobster movement.</p>
 <p><strong>Contact</strong>: <a href="mailto:kjlees@uwindsor.ca" class="email">kjlees@uwindsor.ca</a>, @<a href="http://twitter.com/Scottish_Bird">Scottish_bird</a></p>
 <p><br><br></p>
 <p><img src= "images/LOBSTER.JPG" style="width:65%; border:5px solid; margin-right: 20px" align= "right"></p>
@@ -321,7 +332,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
