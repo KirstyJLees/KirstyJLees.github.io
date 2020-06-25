@@ -8,6 +8,7 @@ See my [google scholar](https://scholar.google.co.uk/citations?user=CJeBxfUAAAAJ
 - Pahl, K.B., Yurkowski, D.J., <b>Lees, K.J.</b>, and Hussey N.E. Intraguild predation in modern food webs. Food Webs.<br>
 
 ### Published<br>
+<<<<<<< HEAD
 - <b>Lees, K.J.</b>, Mill, A.C., Skerritt, D.J., Robertson, P.A. & Fitzsimmons, C. Spatial overlap, proximity, and interaction between lobsters revealed using acoustic telemetry. Marine Ecology Progress Series. In press [https://doi.org/10.3354/meps13376](https://doi.org/10.3354/meps13376)<br>
 - <b>Lees, K.J.</b>, Mill, A.C., Skerritt, D.J., Robertson, P.A., & Fitzsimmons C., 2018. Movement patterns of a commercially important, free-ranging marine invertebrate in the vicinity of a bait source, Animal Biotelemetry, vol. 6, no. 1, p. 8 <br>
 - <b>Lees, K.J.</b>, McKenzie, A.J., Newell Price, J.P., Critchley, C.N., Rhymer, C.M., Chambers, B.J. & Whittingham, M.J., 2016. The effects of soil compaction mitigation on below-ground fauna: How earthworms respond to mechanical loosening and power harrow cultivation. Agriculture, Ecosystems & Environment, 232, pp. 273-282 <br>
