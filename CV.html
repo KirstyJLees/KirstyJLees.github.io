@@ -13,12 +13,22 @@
 
 <title>CV</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -33,11 +43,6 @@
     </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -50,32 +55,7 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -86,10 +66,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -106,40 +82,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 52px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h2 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h3 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h4 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h5 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
-.section h6 {
-  padding-top: 57px;
-  margin-top: -57px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -167,7 +119,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -179,7 +131,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -189,11 +141,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -205,13 +174,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -219,16 +187,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -272,7 +233,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -304,7 +265,7 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -316,41 +277,105 @@ $(document).ready(function () {
 <div id="key-research-skills" class="section level2">
 <h2>Key Research Skills</h2>
 <ul>
-<li>R statistical programming environment for biostatistical and behavioural modelling</li>
-<li>Building and implementing Bayesian mark-recapture models in RStan</li>
-<li>Analysing patterns of movement and behaviour from telemetry data in different environments</li>
-<li>Use of GIS software and integration with formal statistical analysis</li>
+<li>R statistical programming environment for biostatistical and
+behavioural modelling</li>
+<li>Building and implementing Bayesian mark-recapture models in
+RStan</li>
+<li>Analysing patterns of movement and behaviour from telemetry data in
+different environments</li>
+<li>Use of GIS software and integration with formal statistical
+analysis</li>
 </ul>
 <p><br></p>
 </div>
 <div id="education" class="section level2">
 <h2>Education</h2>
 <ul>
-<li>2015-2018 <u>Newcastle University - PhD School of Natural and Environmental Sciences.</u><br> “Movement patterns of the European lobster Homarus gammarus: investigating the effects of habitat use and behaviour patterns on catchability.”</li>
-<li>2005-2006 <u>University of Edinburgh - MSc Forest Ecology and Management.</u><br> “Scarlet macaw food choice in relation to fruiting phenology and availability.”</li>
-<li>2000-2004 <u>University of Glasgow - BSc (Hons) Zoology, 2:2.</u><br></li>
+<li>2015-2018 <u>Newcastle University - PhD School of Natural and
+Environmental Sciences.</u><br> “Movement patterns of the European
+lobster Homarus gammarus: investigating the effects of habitat use and
+behaviour patterns on catchability.”</li>
+<li>2005-2006 <u>University of Edinburgh - MSc Forest Ecology and
+Management.</u><br> “Scarlet macaw food choice in relation to fruiting
+phenology and availability.”</li>
+<li>2000-2004 <u>University of Glasgow - BSc (Hons) Zoology,
+2:2.</u><br></li>
 </ul>
 <p><br></p>
 </div>
 <div id="employment-history" class="section level2">
 <h2>Employment History</h2>
 <ul>
-<li>2020 – <u>Postdoctoral Researcher, IML, Department for Fisheries and Oceans Canada, QC.</u><br> Studying the movement ecology and behaviour of benthic invertebrates using acoustic telemetry.<br></li>
-<li>2019 – <u>Postdoctoral Fellow, Integrative Biology, University of Windsor, ON.</u><br> Developing acoustic telemetry Bayesian mark-recapture models using RStan to estimate survival of Greenland halibut and support the development of an Inuit community fishery. Assisting with the supervision of student projects, and contributing to Arctic-based telemetry field work.<br></li>
-<li>2011-2014 <u>Research Assistant, University of Highlands &amp; Islands, U.K.</u><br> Assisting on a variety of collaborative multidisciplinary EU projects that investigated the potential ecological effects of marine renewable energy.<br> –Energymare - Monitoring the potential for fish aggregation around wave energy converters using underwater cameras.<br> –Hebridean Marine Energy Futures - Investigating the potential ecological impact of wave renewable energy devices on seabird distributions. Spatial analysis and statistical modelling of seabird distributions using a long-term dataset of land-based seabird observations, before and after deployment of a wave energy device.<br> –MaREE - Investigating the overlap of seabird dive profiles and habitat use with marine renewable sites. Deploying GPS and TDR tags on seabirds.<br></li>
-<li>2010-2011 <u>Field Ecologist, Food and Environment Research Agency, UK.</u><br> Field and laboratory support for projects within the Wildlife Management team. Assisting with the trapping of small to large mammals, and deployment of RADAR to monitor bird movement through offshore energy developments.<br></li>
-<li>2009 <u> Senior Research Assistant - Royal Society for the Protection of Birds, UK</u><br> Completing extensive surveys of upland breeding birds, and nest trapping shore birds to attach VHF tags to both adults and chicks.<br></li>
+<li>2020 – <u> Decapod Researcher, IML, Department for Fisheries and
+Oceans Canada, QC.</u><br> Studying the movement ecology, behaviour, and
+population dynamics of benthic invertebrates in support of fisheries
+management.<br></li>
+<li>2019 – <u>Postdoctoral Fellow, Integrative Biology, University of
+Windsor, ON.</u><br> Developing acoustic telemetry Bayesian
+mark-recapture models using RStan to estimate survival of Greenland
+halibut and support the development of an Inuit community fishery.
+Assisting with the supervision of student projects, and contributing to
+Arctic-based telemetry field work.<br></li>
+<li>2011-2014 <u>Research Assistant, University of Highlands &amp;
+Islands, U.K.</u><br> Assisting on a variety of collaborative
+multidisciplinary EU projects that investigated the potential ecological
+effects of marine renewable energy.<br> –Energymare - Monitoring the
+potential for fish aggregation around wave energy converters using
+underwater cameras.<br> –Hebridean Marine Energy Futures - Investigating
+the potential ecological impact of wave renewable energy devices on
+seabird distributions. Spatial analysis and statistical modelling of
+seabird distributions using a long-term dataset of land-based seabird
+observations, before and after deployment of a wave energy device.<br>
+–MaREE - Investigating the overlap of seabird dive profiles and habitat
+use with marine renewable sites. Deploying GPS and TDR tags on
+seabirds.<br></li>
+<li>2010-2011 <u>Field Ecologist, Food and Environment Research Agency,
+UK.</u><br> Field and laboratory support for projects within the
+Wildlife Management team. Assisting with the trapping of small to large
+mammals, and deployment of RADAR to monitor bird movement through
+offshore energy developments.<br></li>
+<li>2009 <u> Senior Research Assistant - Royal Society for the
+Protection of Birds, UK</u><br> Completing extensive surveys of upland
+breeding birds, and nest trapping shore birds to attach VHF tags to both
+adults and chicks.<br></li>
 </ul>
 <p><br></p>
 </div>
 <div id="teaching-experience" class="section level2">
 <h2>Teaching Experience</h2>
-<p><b>Lecturing</b> – Community Ecology (final year undergraduate), University of Windsor.<br> <b>Undergraduate Supervision</b><br> – Investigating differing detection efficiencies of VMT and VR2 acoustic receivers (University of Windsor, 2019). <br> – Habitat use and home-range analysis of GPS collared vervet monkeys Chlorocebus aethiops on St Kitts (Newcastle University, 2017 and 2018). <br> <b>Computer practicals</b> Statistics using R (MSc), Ecological modelling (BSc), and Introduction to GIS (BSc).<br> <b>Field Courses</b> Residential field courses: Supervision of small groups during independent projects.<br> – Ornithology: Field visits to practice bird identification and daily classroom revision sessions.<br> – Small Mammal Ecology: small mammal trapping, radio-tracking, and home range analyses. <br></p>
+<p><b>Lecturing</b> – Community Ecology (final year undergraduate),
+University of Windsor.<br> <b>Undergraduate Supervision</b><br> –
+Investigating differing detection efficiencies of VMT and VR2 acoustic
+receivers (University of Windsor, 2019). <br> – Habitat use and
+home-range analysis of GPS collared vervet monkeys Chlorocebus aethiops
+on St Kitts (Newcastle University, 2017 and 2018). <br> <b>Computer
+practicals</b> Statistics using R (MSc), Ecological modelling (BSc), and
+Introduction to GIS (BSc).<br> <b>Field Courses</b> Residential field
+courses: Supervision of small groups during independent projects.<br> –
+Ornithology: Field visits to practice bird identification and daily
+classroom revision sessions.<br> – Small Mammal Ecology: small mammal
+trapping, radio-tracking, and home range analyses. <br></p>
 <p><br></p>
 </div>
 <div id="additional-relevant-skills" class="section level2">
 <h2>Additional relevant skills</h2>
-<p><b>Peer-review</b> Marine Ecology Progress Series, Fisheries Management and Ecology.<br> <b>Software</b> Experienced LaTeX user.<br> <b>Fieldwork</b> Boat-based fieldwork - up to 2 weeks at sea. Acoustic receiver deployment and maintenance, acoustic tagging of lobsters and crabs, and fish dissections and sampling.<br> Bird ringing/banding permit holder - British Trust for Ornithology.<br> <b>Outreach</b> Science-based Stand-up Comedy, The Stand Comedy Club, Newcastle.<br> Two performances as part of Bright Club. Bright Club encourages academics to share their research experiences using the medium of comedy with adult audiences that are not usually targeted as part of traditional outreach activities.<br> <a href="https://www.youtube.com/watch?v=Nnou0FRtRpI" class="uri">https://www.youtube.com/watch?v=Nnou0FRtRpI</a> April 2016 - starts 6.40 min<br> <a href="https://www.youtube.com/watch?v=Enghu41ZEus" class="uri">https://www.youtube.com/watch?v=Enghu41ZEus</a> July 2015</p>
+<p><b>Peer-review</b> Marine Ecology Progress Series, Fisheries
+Management and Ecology, ICES JMS, Animal Biotelemetry, Aquaculture, Fish
+and Fisheries.<br> <b>Software</b> Experienced LaTeX user.<br>
+<b>Fieldwork</b> Boat-based fieldwork - up to 2 weeks at sea. Acoustic
+receiver deployment and maintenance, acoustic tagging of lobsters and
+crabs, and fish dissections and sampling.<br> Bird ringing/banding
+permit holder - British Trust for Ornithology.<br> <b>Outreach</b>
+Science-based Stand-up Comedy, The Stand Comedy Club, Newcastle.<br> Two
+performances as part of Bright Club. Bright Club encourages academics to
+share their research experiences using the medium of comedy with adult
+audiences that are not usually targeted as part of traditional outreach
+activities.<br> <a href="https://www.youtube.com/watch?v=Nnou0FRtRpI"
+class="uri">https://www.youtube.com/watch?v=Nnou0FRtRpI</a> April 2016 -
+starts 6.40 min<br> <a
+href="https://www.youtube.com/watch?v=Enghu41ZEus"
+class="uri">https://www.youtube.com/watch?v=Enghu41ZEus</a> July
+2015</p>
 </div>
 
 
@@ -380,7 +405,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
