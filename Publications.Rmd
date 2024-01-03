@@ -4,11 +4,15 @@ title: "Publications"
 See my [google scholar](https://scholar.google.co.uk/citations?user=CJeBxfUAAAAJ&hl=en) page for an up to date list.
 
 ### Published<br>
+- Skerritt, D.J., Bell, M.C., <b>Lees, K.J.</b>, Mill, A.C., Polunin, N.V. and Fitzsimmons, C., 2023. Estimating catchability and density of the European lobster Homarus gammarus from continuous, short-term mark-recapture data. Marine Ecology Progress Series, 715, pp.79-89.<br>
+- <b>Lees, K.J.</b>, Lavoie, M.F., Macgregor, K.A., Simard, E., Drouin, A., Comeau, L.A. and McKindsey, C.W., 2023. Movement of American lobsters Homarus americanus and rock crabs Cancer irroratus around mussel farms in Malpeque Bay, Prince Edward Island, Canada. Aquaculture Environment Interactions, 15, pp.179-193.<br>
+- <b>Lees, K.J.</b>, MacNeil, M.A., Hedges, K.J. and Hussey, N.E., 2022. Estimating survival in a remote community-based fishery using acoustic telemetry. Canadian Journal of Fisheries and Aquatic Sciences, 79(11), pp.1830-1842.<br>
+- Florko, K.R., Davidson, E.R., <b>Lees, K.J.</b>, Hammer, L.J., Lavoie, M.F., Lennox, R.J., Simard, E., Archambault, P., Auger-Methe, M., McKindsey, C.W. and Whoriskey, F.G., 2021. Tracking movements of decapod crustaceans: a review of a half-century of telemetry-based studies. Marine Ecology Progress Series, 679, pp.219-239.<br>
 - <b>Lees, K.J.</b>, MacNeil, M.A., Hedges, K.J., & Hussey, N.E. Estimating demographic parameters for fisheries management using acoustic telemetry. Rev Fish Biol Fisheries 31, 25-51 (2021). https://doi.org/10.1007/s11160-020-09626-8.<br>
 - Pahl, K.B., Yurkowski, D.J., <b>Lees, K.J.</b>, and Hussey N.E. Measuring the occurrence and strength of intraguild predation in modern food webs. Vol 25,
 2020, e00165, https://doi.org/10.1016/j.fooweb.2020.e00165<br>
 - <b>Lees, K.J.</b>, Mill, A.C., Skerritt, D.J., Robertson, P.A. & Fitzsimmons, C. Spatial overlap, proximity, and interaction between lobsters revealed using acoustic telemetry. Marine Ecology Progress Series. In press [https://doi.org/10.3354/meps13376](https://doi.org/10.3354/meps13376)<br>
 - <b>Lees, K.J.</b>, Mill, A.C., Skerritt, D.J., Robertson, P.A., & Fitzsimmons C., 2018. Movement patterns of a commercially important, free-ranging marine invertebrate in the vicinity of a bait source, Animal Biotelemetry, vol. 6, no. 1, p. 8 <br>
 - <b>Lees, K.J.</b>, McKenzie, A.J., Newell Price, J.P., Critchley, C.N., Rhymer, C.M., Chambers, B.J. & Whittingham, M.J., 2016. The effects of soil compaction mitigation on below-ground fauna: How earthworms respond to mechanical loosening and power harrow cultivation. Agriculture, Ecosystems & Environment, 232, pp. 273-282 <br>
--	<b>Lees, K.J.</b>, Guerin, A.J. & Masden, E.A., 2016. Using kernel density estimation to explore habitat use by seabirds at a marine renewable wave energy test facility. Marine Policy, 63, pp.35-44<br>
+- <b>Lees, K.J.</b>, Guerin, A.J. & Masden, E.A., 2016. Using kernel density estimation to explore habitat use by seabirds at a marine renewable wave energy test facility. Marine Policy, 63, pp.35-44<br>
 

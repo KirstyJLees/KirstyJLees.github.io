@@ -21,8 +21,8 @@ output: html_document
 <br>
 
 ## Employment History
-- 2020 --	<u>Postdoctoral Researcher, IML, Department for Fisheries and Oceans Canada, QC.</u><br> 
-Studying the movement ecology and behaviour of benthic invertebrates using acoustic telemetry.<br>
+- 2020 --	<u> Decapod Researcher, IML, Department for Fisheries and Oceans Canada, QC.</u><br> 
+Studying the movement ecology, behaviour, and population dynamics of benthic invertebrates in support of fisheries management.<br>
 - 2019 --	<u>Postdoctoral Fellow, Integrative Biology, University of Windsor, ON.</u><br> 
 Developing acoustic telemetry Bayesian mark-recapture models using RStan to estimate survival of Greenland halibut and support the development of an Inuit community fishery. Assisting with the supervision of student projects, and contributing to Arctic-based telemetry field work.<br>
 - 2011-2014	<u>Research Assistant, University of Highlands & Islands, U.K.</u><br> 
@@ -50,7 +50,7 @@ Completing extensive surveys of upland breeding birds, and nest trapping shore b
 <br>
 
 ## Additional relevant skills
-<b>Peer-review</b>	Marine Ecology Progress Series, Fisheries Management and Ecology.<br>
+<b>Peer-review</b>	Marine Ecology Progress Series, Fisheries Management and Ecology, ICES JMS, Animal Biotelemetry, Aquaculture, Fish and Fisheries.<br>
 <b>Software</b>	Experienced LaTeX user.<br>
 <b>Fieldwork</b>	Boat-based fieldwork - up to 2 weeks at sea. Acoustic receiver deployment and maintenance, acoustic tagging of lobsters and crabs, and fish dissections and sampling.<br> 
 Bird ringing/banding permit holder - British Trust for Ornithology.<br>
