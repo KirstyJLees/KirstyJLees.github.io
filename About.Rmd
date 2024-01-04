@@ -2,7 +2,7 @@
 title: "About me..."
 ---
 <br>
-<img src= "images/KIRSTY.jpg" style="width:31%; border:5px solid; margin-right: 20px" align= "left"> 
+<img src= "images/KIRSTY1.jpg" style="width:31%; border:5px solid; margin-right: 20px" align= "left"> 
 I am a quantitative ecologist that enjoys working with complex datasets to solve applied fisheries problems. My research is focussed on answering ecological questions that are relevant to stakeholders, by addressing knowledge gaps that are necessary to improve management decision-making. Many of my previous projects have been highly collaborative, involving stakeholders, regulators and industry. 
 
 My research at the Department of Fisheries and Oceans is focussed on studying the movement, the behaviour and population of ecologically and commercially important benthic invertebrate species; snow crab (Chionoecetes opilio), American lobster (Homarus americanus), and rock crab (Cancer irroratus). 
@@ -13,4 +13,4 @@ The aim of my PhD research was to better understand movement of free-ranging Eur
 
 <br><br>
 
-<img src= "images/LOBSTER.jpg" style="width:65%; border:5px solid; margin-right: 20px" align= "right"> 
+<img src= "images/LOBSTER1.jpg" style="width:65%; border:5px solid; margin-right: 20px" align= "right"> 
